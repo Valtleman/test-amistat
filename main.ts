@@ -5,7 +5,6 @@ input.onPinPressed(TouchPin.P1, function () {
     basic.showString("" + (Math.randomBoolean()))
 })
 basic.forever(function () {
-    basic.pause(500)
     basic.showLeds(`
         . # . # .
         # # # # #
@@ -21,4 +20,5 @@ basic.forever(function () {
         . . # . .
         . . . . .
         `)
+    basic.pause(500)
 })
